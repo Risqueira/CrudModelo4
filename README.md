@@ -49,7 +49,7 @@ Crie o schema e tabelas:
 CREATE DATABASE IF NOT EXISTS cruddb1;
 USE cruddb1;
 
-CREATE TABLE usuario (
+CREATE TABLE tbusuario (
   id INT AUTO_INCREMENT PRIMARY KEY,
   login VARCHAR(100) NOT NULL UNIQUE,
   senha VARCHAR(100) NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE usuario (
   ativo TINYINT(1) DEFAULT 1
 );
 
-CREATE TABLE cliente (
+CREATE TABLE tbcliente (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(150) NOT NULL,
   email VARCHAR(150),
@@ -119,3 +119,4 @@ GRANT ALL PRIVILEGES ON cruddb1.* TO 'appuser'@'localhost';
 
 ## 👨‍🏫 Sobre
 Este projeto foi desenvolvido para fins **educacionais**, como exemplo de CRUD com **Java + MySQL + Swing**, servindo de base para práticas de programação fullstack.
+
